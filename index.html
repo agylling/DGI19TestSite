@@ -42,17 +42,4 @@ title: Home
 <div class="backGroundRow centering">
 </div>
 
-<table class="portraitTable">
-  {% for item in site.data.contribution %}
-  <tr>
-    <td class="portraitTable">
-      <img class="portrait" src="{{item.url}}"/>
-    </td>
-    <td class="portraitTable">
-      <p>
-        {{item.contribution}}
-      </p>
-    </td>
-  </tr>
-  {% endfor %}
-</table>
+{% include contributions.html %}
